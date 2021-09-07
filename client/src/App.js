@@ -2,7 +2,7 @@ import React from "react";
 
 // We use Route in order to define the different routes of our application
 import { Route } from "react-router-dom";
-
+// I am adding some random line to test Git functions.
 // We import all the components we need in our app
 import Navbar from "./components/navbar";
 import Edit from "./components/edit";
