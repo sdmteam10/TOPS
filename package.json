@@ -1,0 +1,33 @@
+{
+  "name": "tops",
+  "version": "1.0.0",
+  "description": "TOPS built with the MERN stack",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start5 --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run clinet\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTRION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sdmteam10/TOPS.git"
+  },
+  "author": "Yulun Wu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sdmteam10/TOPS/issues"
+  },
+  "homepage": "https://github.com/sdmteam10/TOPS#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^6.2.1",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
