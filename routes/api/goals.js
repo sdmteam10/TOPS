@@ -26,7 +26,7 @@ router.post('/', (req, res) => {
 router.delete('/:id', (req, res) => {
   Goal.findById(req.params.id)
       .then(goal=> goal.remove().then(() => res.json({success: true})))
-      .catch(err=> res.stauts(404).json({ success: false}))
+      .catch(err=> res.status(404).json({ success: false}))
     })
 
 
