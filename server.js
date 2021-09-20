@@ -7,14 +7,11 @@ const app = express();
 
 //Bodyparser Middleware
 //app.use(express.urlencoded({extended: true})); // DO WE NEED IT?
-<<<<<<< HEAD
-=======
 app.all('/*', function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "X-Requested-With");
     next();
   });
->>>>>>> activityScheduler_1_1
 app.use(express.json());
 
 // DB Config
