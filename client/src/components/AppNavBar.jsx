@@ -7,7 +7,7 @@ class AppNavBar extends Component {
 
     render() {
         return (
-            <nav className="navbar navbar-expand-md navbar-dark bg-success">
+            <nav className="navbar navbar-expand-md navbar-dark bg-primary">
                 <div className="container-fluid">
                     <a className="navbar-brand ms-md-5" href="/">TOPS</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

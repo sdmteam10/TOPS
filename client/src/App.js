@@ -5,11 +5,14 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Home from './components/Home'
 import GoalsList from './components/GoalsList'
 import AppNavBar from './components/AppNavBar'
+import TitleActivity from './components/TitleActivity';
 
 function App() {
   return (
+    
     <>
       <AppNavBar />
+      <TitleActivity />
       <div className='container-md' style={{height: '500px'}}>
         {/* 路由入口 */}
         <Router>
