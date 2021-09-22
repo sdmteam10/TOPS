@@ -16,10 +16,13 @@ class AppNavBar extends Component {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav w-25 mx-md-auto">
                             <li className="nav-item">
-                                <a className="nav-link" href="/">Home</a>
+                                <a className="nav-link" href="/Onboarder">Onboarder</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/Goals">Goals</a>
+                                <a className="nav-link" href="/Designer">Designer</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="/Contact">Contact</a>
                             </li>
                         </ul>
                     </div>

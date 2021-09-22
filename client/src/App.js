@@ -2,10 +2,11 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import Home from './components/Home'
+import Onboarder from './components/Onboarder'
 import GoalsList from './components/GoalsList'
 import AppNavBar from './components/AppNavBar'
-import TitleActivity from './components/TitleActivity';
+import TitleActivity from './components/TitleActivity'
+
 
 function App() {
   return (
@@ -18,8 +19,9 @@ function App() {
         <Router>
           <Switch>
             {/* 路由规则 */}
-            <Route path="/" component={Home} exact />
-            <Route path="/Goals" component={GoalsList} />
+            {/* <Route path="/" component={Home} exact /> */}
+            <Route path="/Onboarder" component={Onboarder} />
+            <Route path="/Designer" component={GoalsList} />
           </Switch>
         </Router>
       </div>
@@ -27,3 +29,4 @@ function App() {
   )}
 
 export default App;
+

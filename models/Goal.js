@@ -8,6 +8,9 @@ const GoalSchema = new Schema({
     },
     goalNumber: {
         type: Number
+    },
+    goalActivities: {
+        type: Array
     }
 });
 

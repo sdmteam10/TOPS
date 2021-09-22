@@ -1,6 +1,7 @@
 import express from "express"
 import mongoose from 'mongoose'
 import goals from "./routes/api/goals.js"
+import activities from "./routes/api/activities.js"
 import path from 'path'
 
 const app = express();
@@ -27,6 +28,7 @@ mongoose.connect(db)
 
 //Use routes
 app.use('/routes/api/goals', goals);
+app.use('/routes/api/activities', activities);
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
     
 //Serve static assets if in production
@@ -34,7 +36,8 @@ app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
 if(process.env.NODE_ENV === 'production') {
     // Set static folder
     app.use(express.static('client/build'))
-
+    //axios.defaults.baseURL = process.env.SERVER_URI;
+    require('./config/config');
     app.get ('*', (req, res) => {
         res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
 

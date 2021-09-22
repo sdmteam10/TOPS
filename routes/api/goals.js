@@ -1,5 +1,6 @@
 import Express from "express";
 import Goal from '../../models/Goal.js';
+//import Activity from '../../models/Activity.js';
 
 const router = Express.Router();
 
@@ -8,14 +9,16 @@ const router = Express.Router();
 router.get('/', (req, res) => {
     Goal.find()
         .sort({ date: -1 })
-        .then(goals => res.json(goals))
+        .then(goals => res.json(goals));
+
 })
 
 // POST model
 router.post('/', (req, res) => {
     const newGoal = new Goal({
       name: req.body.name,
-      goalNumber: req.body.goalNumber
+      goalNumber: req.body.goalNumber,
+      goalActivities: req.body.goalActivities
     })
   
     newGoal.save()
