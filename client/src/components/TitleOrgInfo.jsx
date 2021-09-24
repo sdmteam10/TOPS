@@ -12,7 +12,7 @@ class TitleOrgInfo extends Component {
               <br />
               <h2>Organisational Information</h2>
               <br />
-              <h6> Fill in information quickly.</h6>
+              <h6> Fill in the form quickly.</h6>
               <h6> Record the interview. </h6>
               <br />
             </div>

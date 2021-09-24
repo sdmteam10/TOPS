@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import { Alert } from 'bootstrap'
 
 class OrgInfo extends Component {
 
@@ -79,7 +78,7 @@ class OrgInfo extends Component {
     return (
       <>
         <div className='container-fluid'>
-          <form className="mx-auto mt-md-5 font-monospace" id="2" onSubmit={this.submitForm}>
+          <form className="mx-auto mt-5 mt-md-5 font-monospace" id="2" onSubmit={this.submitForm}>
             {/* Q1*/}
             <div className="mb-3">
               <label htmlFor="validationTextarea" className="form-label">1.	Who is the Manager that the team manager reports to?</label>
