@@ -4,6 +4,7 @@ import goals from "./routes/api/goals.js"
 import activities from "./routes/api/activities.js"
 import path from 'path'
 import orgInfo from "./routes/api/orgInfo.js"
+import { fileURLToPath } from "url"
 
 const app = express();
 
@@ -39,12 +40,10 @@ process.env.NODE_ENV = 'production'
 if(process.env.NODE_ENV === 'production') {
     // Set static folder
     app.use(express.static('client/build'))
-    
+    const __dirname = path.dirname(fileURLToPath(import.meta.url))
     //axios.defaults.baseURL = process.env.SERVER_URI;
     app.get ('*', (req, res) => {
         res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
 
     })
-
-    app.get('/Home', (req, res) => res.render('client/src/components/Home'))
 }
