@@ -36,13 +36,6 @@ class GoalsList extends Component {
             })
     }
 
-    // componentDidUpdate(previousProps, previousState) {
-    //     if (previousProps.data !== this.props.data) {
-    //         this.setState({goalActs: this.state.goalActs})
-    //     }
-    // }
-
-
     CreateGoal(newGoal) {
         console.log('Clicked')
         axios.post(`/routes/api/goals/`, newGoal)
@@ -54,8 +47,17 @@ class GoalsList extends Component {
             })
     }
 
-    // sayHello(goalNumber) {
-    //      console.log('hello')
+    // sayHello(acc) {
+    //     for (let i = 0; i < acc.length; i++) {
+    //         acc[i].addEventListener("click", () => {
+    //             this.classList.toggle("active");
+    //             var panel = this.nextElementSibling;
+    //             if (panel.style.maxHeight) {
+    //                 panel.style.maxHeight = null;
+    //             } else {
+    //                 panel.style.maxHeight = panel.scrollHeight + "px";
+    //             }
+    //         })}
     //  }
 
     async handler(goalNumber) {
@@ -67,12 +69,10 @@ class GoalsList extends Component {
             act: {}
         })
 
-
-
         for (let i of this.state.goals) {
             if (i.goalNumber === goalNumber) {
                 //console.log(i)
-                this.state.currentGoal = i
+                //this.state.currentGoal = i
                 this.setState({ currentGoal: i })
             }
         }
@@ -119,19 +119,16 @@ class GoalsList extends Component {
 
         return (
             <>
-                
                 {/* Goals List */}
                 <div className="w-75 mx-auto mt-md-5" style={{ height: '500px' }}>
                     <br />
 
                     {
                         this.state.goals.map(goal => (
-                            <div className="d-grid gap-0 col-10 mx-auto" key={goal._id}>
-                                <button onClick={() => this.handler(goal.goalNumber)} className="btn col-md-auto btn-sm btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" >{goal.name}</button>
+                            <div className="d-grid gap-0 col-10 mx-auto btn-group dropend" key={goal._id}>
+                                <button onClick={() => this.handler(goal.goalNumber)} className="btn col-md-auto btn-sm btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" type="button">{goal.name}</button>
 
-                                {/* {this.state.goalActs.map(act => 
-                                                        <li>{act.name}</li>)}  */}
-                                <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1" style={{ width: 'auto' }}>
+                                <ul class="dropdown-menu">
                                     {
 
                                         this.state.goalActs.map(goalAct => (
@@ -143,7 +140,6 @@ class GoalsList extends Component {
                                     }
                                 </ul>
                                 <hr />
-                                {/* <ActivityList /> */}
                             </div>
                         ))
                     }
