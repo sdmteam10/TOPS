@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 /*This is the designer's landing page. */
 class Designer extends Component {
@@ -10,7 +9,7 @@ class Designer extends Component {
       <div>
         <div className="mt-md-5 ws-0 mx-md-auto">
             <div>
-            <h1 className="link-secondary fw-light font-monospace">Welcome Designer!</h1>
+            <h1 className="text-secondary fw-light font-monospace">Welcome Designer!</h1>
             <br />
             <br />
             </div>

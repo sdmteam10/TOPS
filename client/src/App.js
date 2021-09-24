@@ -1,4 +1,4 @@
-import './App.css';
+import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
