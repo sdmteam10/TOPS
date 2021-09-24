@@ -3,7 +3,9 @@ import React, { Component } from 'react';
 class Home extends Component {
   render() {
     return (
-      <div>Home Page</div>
+      <div className="mt-md-5 ws-0 mx-md-auto">
+      <div className="font-monospace">Home Page</div>
+      </div>
     )
   }
 }

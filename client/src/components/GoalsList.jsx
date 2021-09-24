@@ -25,7 +25,7 @@ class GoalsList extends Component {
             })
             .catch(err => {
                 console.log(err)
-            }) 
+            })
         axios.get(`/routes/api/activities/`)
             .then(res => {
                 this.setState({ acts: res.data })
@@ -120,37 +120,39 @@ class GoalsList extends Component {
         return (
             <>
                 {/* Goals List */}
-                <div className="w-75 mx-auto mt-md-5" style={{ height: '500px' }}>
-                    <br />
+                <div className='container-fluid'>
+                    <div className="w-75 mx-auto mt-md-5 font-monospace" style={{ height: '500px' }}>
+                        <br />
 
-                    {
-                        this.state.goals.map(goal => (
-                            <div className="d-grid gap-0 col-10 mx-auto btn-group dropend" key={goal._id}>
-                                <button onClick={() => this.handler(goal.goalNumber)} className="btn col-md-auto btn-sm btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" type="button">{goal.name}</button>
+                        {
+                            this.state.goals.map(goal => (
+                                <div className="d-grid gap-0 col-10 mx-auto btn-group dropend" key={goal._id}>
+                                    <button onClick={() => this.handler(goal.goalNumber)} className="btn col-md-auto btn-sm btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" type="button">{goal.name}</button>
 
-                                <ul class="dropdown-menu">
-                                    {
+                                    <ul class="dropdown-menu">
+                                        {
 
-                                        this.state.goalActs.map(goalAct => (
+                                            this.state.goalActs.map(goalAct => (
 
-                                            <li className="dropdown-item" key={goalAct._id}>{goalAct.name}</li>
+                                                <li className="dropdown-item" key={goalAct._id}>{goalAct.name}</li>
 
-                                            //  <RecomActivity key={goalAct._id} act={goalAct} />
-                                        ))
-                                    }
-                                </ul>
-                                <hr />
-                            </div>
-                        ))
-                    }
+                                                //  <RecomActivity key={goalAct._id} act={goalAct} />
+                                            ))
+                                        }
+                                    </ul>
+                                    <hr />
+                                </div>
+                            ))
+                        }
 
-                    {/* New Goal Form */}
-                    {/* <form>
+                        {/* New Goal Form */}
+                        {/* <form>
                         <label htmlFor="goalName">Goal Name</label>
                         <input name="goalName" type="text" className="form-control" />
 
                         <button className="btn btn-info">Create Goal</button>
                     </form> */}
+                    </div>
                 </div>
             </>
         )
