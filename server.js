@@ -46,5 +46,5 @@ if(process.env.NODE_ENV === 'production') {
 
     })
 
-    app.get('/Home', (req, res) => res.render('TOPS/Home'))
+    app.get('/Home', (req, res) => res.render('client/src/components/Home'))
 }
