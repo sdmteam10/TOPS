@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class TitleActivity extends Component {
+class TitleOrgInfo extends Component {
     state = {
 
     }
@@ -10,11 +10,10 @@ class TitleActivity extends Component {
           <div className="bg-primary font-monospace" style={{ height: "auto" }}>
             <div className='text-light mx-auto text-center'>
               <br />
-              <h2>Activity Scheduler</h2>
+              <h2>Organisational Information</h2>
               <br />
-              <h6> Drag activities onto a card to create your own scheduler.</h6>
-              <h6> Select goals to see activities.</h6>
-              <h6> Make your own activity scheduler.</h6>
+              <h6> Fill in information quickly.</h6>
+              <h6> Record the interview. </h6>
               <br />
             </div>
           </div>
@@ -22,4 +21,4 @@ class TitleActivity extends Component {
     }
 }
 
-export default TitleActivity
+export default TitleOrgInfo

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class TitleActivity extends Component {
+class TitleHome extends Component {
     state = {
 
     }
@@ -10,11 +10,11 @@ class TitleActivity extends Component {
           <div className="bg-primary font-monospace" style={{ height: "auto" }}>
             <div className='text-light mx-auto text-center'>
               <br />
-              <h2>Activity Scheduler</h2>
+              <h2>Team Onboarding Process Support</h2>
               <br />
-              <h6> Drag activities onto a card to create your own scheduler.</h6>
-              <h6> Select goals to see activities.</h6>
-              <h6> Make your own activity scheduler.</h6>
+              <h6> Designing an onboarding program that is personalised </h6>
+              <h6> to the characteristics of the onboarder and </ h6>
+              <h6> the team and the organisational context. </h6>
               <br />
             </div>
           </div>
@@ -22,4 +22,4 @@ class TitleActivity extends Component {
     }
 }
 
-export default TitleActivity
+export default TitleHome

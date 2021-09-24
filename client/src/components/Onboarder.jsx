@@ -3,7 +3,14 @@ import React, { Component } from 'react';
 class Onboarder extends Component {
   render() {
     return (
-      <div>Onboarder Page</div>
+      <div className="mt-md-5 ws-0 mx-md-auto">
+        <div>
+          <h1 className="link-secondary fw-light font-monospace">Welcome Onboarder!</h1>
+          <br />
+          <br />
+        </div>
+        <div className="font-monospace">Onboarder Page</div>
+      </div>
     )
   }
 }

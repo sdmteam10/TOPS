@@ -8,21 +8,34 @@ import Designer from './components/Designer'
 import GoalsList from './components/GoalsList'
 import AppNavBar from './components/AppNavBar'
 import TitleActivity from './components/TitleActivity'
+import TitleOrgInfo from './components/TitleOrgInfo';
 import OrgInfo from './components/OrgInfo'
+import TitleHome from './components/TitleHome';
 
 
 function App() {
+  let pathname = window.location.pathname
+  let titleDesc
+
+  if (pathname === '/Goals' ) {
+    titleDesc = <TitleActivity />
+  } else if (pathname === '/OrgInfo' ) {
+    titleDesc = <TitleOrgInfo />
+  } else if (pathname === '/Home' || pathname === '/')
+    titleDesc = <TitleHome />
+  
+
   return (
     
     <>
       <AppNavBar />
-      <TitleActivity />
+      {titleDesc}
       <div className='container-md' style={{height: '500px'}}>
         {/* 路由入口 */}
         <Router>
           <Switch>
             {/* 路由规则 */}
-            {/* <Route path="/" component={Home} exact /> */}
+            <Route path="/" component={Home} exact />
             <Route path="/Home" component={Home} />
             <Route path="/Onboarder" component={Onboarder} />
             <Route path="/Designer" component={Designer} />

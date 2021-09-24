@@ -10,6 +10,11 @@ class Designer extends Component {
       <div>
         <div className="mt-md-5 ws-0 mx-md-auto">
             <div>
+            <h1 className="link-secondary fw-light font-monospace">Welcome Designer!</h1>
+            <br />
+            <br />
+            </div>
+            <div>
             <a className="link-secondary fw-light font-monospace" href="OrgInfo">Organisation Information Form</a>
             </div>
             <div>
