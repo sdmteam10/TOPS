@@ -9,7 +9,9 @@ import GoalsList from './components/GoalsList'
 import AppNavBar from './components/AppNavBar'
 import TitleActivity from './components/TitleActivity'
 import TitleOrgInfo from './components/TitleOrgInfo';
+import TitleTeamInfo from './components/TitleTeamInfo'
 import OrgInfo from './components/OrgInfo'
+import TeamInfo from './components/TeamInfo'
 import TitleHome from './components/TitleHome';
 
 
@@ -21,8 +23,14 @@ function App() {
     titleDesc = <TitleActivity />
   } else if (pathname === '/OrgInfo' ) {
     titleDesc = <TitleOrgInfo />
-  } else if (pathname === '/Home' || pathname === '/')
+  } else if (pathname === '/Home' || pathname === '/') {
     titleDesc = <TitleHome />
+  } else if (pathname === '/TeamInfo' || pathname === '/')
+    titleDesc = <TitleTeamInfo />
+
+  
+
+
   
 
   return (
@@ -41,6 +49,7 @@ function App() {
             <Route path="/Designer" component={Designer} />
             <Route path="/Goals" component={GoalsList} />
             <Route path="/OrgInfo" component={OrgInfo} />
+            <Route path="/TeamInfo" component={TeamInfo} />
             {/* <Route path="/Designer" render={() =>
               <Designer>
                 <Route exat path="/Designer" component={Designer} />
@@ -51,7 +60,8 @@ function App() {
         </Router>
       </div>
     </>
-  )}
+  )
+}
 
 export default App;
 

@@ -4,6 +4,7 @@ import goals from "./routes/api/goals.js"
 import activities from "./routes/api/activities.js"
 import path from 'path'
 import orgInfo from "./routes/api/orgInfo.js"
+import teamInfo from "./routes/api/teamInfomation.js"
 import { fileURLToPath } from "url"
 
 const app = express();
@@ -32,6 +33,7 @@ mongoose.connect(db)
 app.use('/routes/api/goals', goals);
 app.use('/routes/api/activities', activities);
 app.use('/routes/api/orgInfo', orgInfo)
+app.use('/routes/api/teamInfomation',teamInfo)
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
     
 //Serve static assets if in production

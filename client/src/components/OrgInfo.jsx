@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import Alert from "./Alert";
+
 
 class OrgInfo extends Component {
 
@@ -72,12 +74,21 @@ class OrgInfo extends Component {
     this.setState({ isKnoBase: event.target.value })
   }
 
+ 
+  successInfo =  () =>{
+    Alert.open({
+      alertTip:"Successful submitted. You may make changes and submit again.",
+      closeAlert:function(){
+          console.log("Alert is closed...");
+      }
+  });
+  }
   
 
   render() {
     return (
       <>
-        <div className='container-fluid'>
+        <div className='container-fluid col-lg-6'>
           <form className="mx-auto mt-5 mt-md-5 font-monospace" id="2" onSubmit={this.submitForm}>
             {/* Q1*/}
             <div className="mb-3">
@@ -159,8 +170,8 @@ class OrgInfo extends Component {
             </div>
             {/* Submit */}
             <div className="mb-3">
-              <button className="btn btn-primary" type="submit">Submit form</button>
- 
+              <button className="btn btn-primary btn-lg w-100" type="submit" onClick={this.successInfo}>Submit form</button>
+  
             </div>
           </form>
         </div>

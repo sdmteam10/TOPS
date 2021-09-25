@@ -3,7 +3,7 @@ import OrgInfo from '../../models/OrgInfo.js';
 
 const router = Express.Router();
 
-//goals model
+//orgInfo model
 //Get api
 router.get('/', (req, res) => {
   OrgInfo.find()
