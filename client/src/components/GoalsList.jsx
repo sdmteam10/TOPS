@@ -1,9 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-//import TitleActivity from './TitleActivity';
-//import RecomActivity from './RecomActivity'
-//import GoalActivities from './GoalActivities'
-//import ActivityList from './ActivityList';
+
 
 class GoalsList extends Component {
 
@@ -16,7 +13,6 @@ class GoalsList extends Component {
         goalActs: [],   //The activity objects corresponding to the currently selected target
         recoActIdList: []   //storge activities number list
     }
-    //Are these URL causing the deployment problem?
     componentDidMount() {
         axios.get(`/routes/api/goals/`)
             .then(res => {
@@ -47,18 +43,6 @@ class GoalsList extends Component {
             })
     }
 
-    // sayHello(acc) {
-    //     for (let i = 0; i < acc.length; i++) {
-    //         acc[i].addEventListener("click", () => {
-    //             this.classList.toggle("active");
-    //             var panel = this.nextElementSibling;
-    //             if (panel.style.maxHeight) {
-    //                 panel.style.maxHeight = null;
-    //             } else {
-    //                 panel.style.maxHeight = panel.scrollHeight + "px";
-    //             }
-    //         })}
-    //  }
 
     async handler(goalNumber) {
         //this.state.goalActs = []
@@ -129,7 +113,7 @@ class GoalsList extends Component {
                                 <div className="d-grid gap-0 col-10 mx-auto btn-group dropend" key={goal._id}>
                                     <button onClick={() => this.handler(goal.goalNumber)} className="btn col-md-auto btn-sm btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" type="button">{goal.name}</button>
 
-                                    <ul class="dropdown-menu">
+                                    <ul className="dropdown-menu">
                                         {
 
                                             this.state.goalActs.map(goalAct => (

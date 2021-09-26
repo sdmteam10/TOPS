@@ -77,7 +77,7 @@ const TeamInfoSchema = new Schema({
   // c.Microservices
   // d.other
   archStyles: {
-    type: String
+    type: Array
   },                              
   //11. What unit testing and other testing and quality assurance standards (e.g. code reviews) are expected by the team
   testingStand: {
@@ -88,7 +88,7 @@ const TeamInfoSchema = new Schema({
   // b.Kanban
   // c.Other
   agileDeve: {
-    type: String
+    type: Array
   },    
   //13. What planning techniques are used by the team
   planTechs: {

@@ -4,24 +4,23 @@ import React, { Component } from 'react';
 class Designer extends Component {
   render() {
     return (
-
       
       <div>
         <div className="mt-md-5 ws-0 mx-md-auto">
-            <div>
+          <div>
             <h1 className="text-secondary fw-light font-monospace">Welcome Designer!</h1>
             <br />
             <br />
-            </div>
-            <div>
+          </div>
+          <div>
             <a className="link-secondary fw-light font-monospace" href="OrgInfo">Organisation Information Form</a>
-            </div>
-            <div>
+          </div>
+          <div>
             <a className="link-secondary fw-light font-monospace" href="TeamInfo">Team Information Form</a>
-            </div>
-            <div>
+          </div>
+          <div>
             <a className="link-secondary fw-light font-monospace" href="Goals">Goals Page</a>
-            </div>
+          </div>
         </div>
       </div>
     )

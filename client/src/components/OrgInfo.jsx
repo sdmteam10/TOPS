@@ -6,13 +6,13 @@ import Alert from "./Alert";
 class OrgInfo extends Component {
 
   state = {
-    whoIsManager: "",
-    whereIsChart: "",
-    howWhenAccess: "",
-    funds: "",
-    vision: "",
-    product: "",
-    tool: "",
+    // whoIsManager: "",
+    // whereIsChart: "",
+    // howWhenAccess: "",
+    // funds: "",
+    // vision: "",
+    // product: "",
+    // tool: "",
     isInduProgram: null,
     isMentor: null,
     isKnoBase: null,
