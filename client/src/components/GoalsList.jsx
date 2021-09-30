@@ -119,8 +119,6 @@ class GoalsList extends Component {
                                             this.state.goalActs.map(goalAct => (
 
                                                 <li className="dropdown-item" key={goalAct._id}>{goalAct.name}</li>
-
-                                                //  <RecomActivity key={goalAct._id} act={goalAct} />
                                             ))
                                         }
                                     </ul>
@@ -128,14 +126,6 @@ class GoalsList extends Component {
                                 </div>
                             ))
                         }
-
-                        {/* New Goal Form */}
-                        {/* <form>
-                        <label htmlFor="goalName">Goal Name</label>
-                        <input name="goalName" type="text" className="form-control" />
-
-                        <button className="btn btn-info">Create Goal</button>
-                    </form> */}
                     </div>
                 </div>
             </>

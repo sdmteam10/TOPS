@@ -3,6 +3,7 @@ import Alert from "./Alert";
 
 
 
+
 class Test extends Component {
 
 
@@ -65,6 +66,7 @@ class Test extends Component {
   
   //For Q8 multi-selection checkbox except the customised input value
   async setTechniques(event) {
+    // console.log("This is event", event)
     await this.setState({
       status: event.target.checked
       

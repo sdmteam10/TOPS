@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <Test /> component Should render 1`] = `
+<div
+  className="container-fluid col-sm-6"
+>
+  <form
+    className="mx-auto mt-md-5 font-monospace"
+    onSubmit={[Function]}
+  >
+    <div
+      className="mb-3"
+    >
+      <div
+        onChange={[Function]}
+      >
+        <div
+          className="form-check"
+        >
+          <input
+            className="form-check-input"
+            id="flexCheckDefault08"
+            type="checkbox"
+            value="Infrastructure as code"
+          />
+          <label
+            className="form-check-label"
+            htmlFor="flexCheckDefault08"
+          >
+            i. Infrastructure as code
+          </label>
+        </div>
+        <div
+          className="form-check"
+        >
+          <input
+            className="form-check-input"
+            id="flexCheckDefault09"
+            type="checkbox"
+            value="Static code analysis"
+          />
+          <label
+            className="form-check-label"
+            htmlFor="flexCheckDefault09"
+          >
+            j. Static code analysis
+          </label>
+        </div>
+      </div>
+      <div
+        className="input-group mb-3"
+        onChange={[Function]}
+      >
+        <div
+          className="input-group-text"
+        >
+          <input
+            aria-label="Checkbox for following text input"
+            checked={false}
+            className="form-check-input mt-0"
+            disabled={true}
+            type="checkbox"
+            value="Other"
+          />
+        </div>
+        <input
+          aria-label="Text input with checkbox"
+          className="form-control"
+          onChange={[Function]}
+          placeholder="Please specify.."
+          type="text"
+        />
+      </div>
+    </div>
+    <div
+      className="mb-3"
+    >
+      <button
+        className="btn btn-primary"
+        onClick={[Function]}
+        type="submit"
+      >
+        Submit form
+      </button>
+    </div>
+  </form>
+</div>
+`;

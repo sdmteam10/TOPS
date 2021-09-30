@@ -186,7 +186,6 @@ class TeamInfo extends Component {
     await this.setState({
       codingTests: (this.removeDuplicate(this.state.tempcodingTests))
     })
-
   }
 
    //For Q10 multi-selection checkbox except the customised input value
