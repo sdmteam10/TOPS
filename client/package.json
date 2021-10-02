@@ -2,6 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "dependencies": {
     "@popperjs/core": "^2.10.1",
     "@testing-library/jest-dom": "^5.14.1",
@@ -9,16 +10,32 @@
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.21.4",
     "bootstrap": "^5.1.1",
+    "chai": "^4.3.4",
+    "enzyme": "^3.11.0",
+    "enzyme-to-json": "^3.6.2",
+    "mocha": "^9.1.2",
     "react": "^17.0.2",
+    "react-alert": "^7.0.3",
+    "react-alert-template-basic": "^1.0.2",
+    "react-click-to-edit": "^1.2.3",
     "react-dom": "^17.0.2",
+    "react-draggable": "^4.4.4",
+    "react-native": "^0.65.1",
     "react-router-dom": "^5.3.0",
-    "react-scripts": "4.0.3",
+    "react-scripts": "^4.0.3",
+    "react-test-renderer": "^17.0.2",
+    "riteway": "^6.3.1",
     "web-vitals": "^1.1.2"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css|scss)$": "identity-obj-proxy"
+    }
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest",
     "eject": "react-scripts eject"
   },
   "proxy": "http://localhost:5000",
@@ -39,5 +56,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/bootstrap": "^5.1.6",
+    "@types/regenerator-runtime": "^0.13.1"
   }
 }

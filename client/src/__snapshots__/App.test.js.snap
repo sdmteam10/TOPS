@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Create a snapshot of App 1`] = `
+Array [
+  <nav
+    className="navbar navbar-expand-lg navbar-dark bg-primary font-monospace flex-row"
+  >
+    <div
+      className="container-fluid"
+    >
+      <a
+        className="navbar-brand d-flex w-0 me-0"
+        href="/Home"
+      >
+        TOPS
+      </a>
+      <button
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        className="navbar-toggler"
+        data-bs-target="#navbarSupportedContent"
+        data-bs-toggle="collapse"
+        type="button"
+      >
+        <span
+          className="navbar-toggler-icon"
+        />
+      </button>
+      <div
+        className="collapse navbar-collapse w-100"
+        id="navbarSupportedContent"
+      >
+        <ul
+          className="navbar-nav nav-fill w-50 mx-auto"
+        >
+          <li
+            className="nav-item"
+          >
+            <a
+              className="nav-link"
+              href="/Onboarder"
+            >
+              Onboarder
+            </a>
+          </li>
+          <li
+            className="nav-item"
+          >
+            <a
+              className="nav-link"
+              href="/Designer"
+            >
+              Designer
+            </a>
+          </li>
+          <li
+            className="nav-item"
+          >
+            <a
+              className="nav-link"
+              href="/Contact"
+            >
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>,
+  <div
+    className="bg-primary font-monospace"
+    style={
+      Object {
+        "height": "auto",
+      }
+    }
+  >
+    <div
+      className="text-light mx-auto text-center"
+    >
+      <br />
+      <h2>
+        Team Onboarding Process Support
+      </h2>
+      <br />
+      <h6>
+         Designing an onboarding program that is personalised 
+      </h6>
+      <h6>
+         to the characteristics of the onboarder and 
+      </h6>
+      <h6>
+         the team and the organisational context. 
+      </h6>
+      <br />
+    </div>
+  </div>,
+  <div
+    className="container-md"
+    style={
+      Object {
+        "height": "500px",
+      }
+    }
+  >
+    <div
+      className="mt-md-5 ws-0 mx-md-auto"
+    >
+      <div
+        className="font-monospace"
+      >
+        Home Page
+      </div>
+    </div>
+  </div>,
+]
+`;

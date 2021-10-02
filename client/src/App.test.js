@@ -1,8 +1,15 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import * as React from 'react'
+import App from './App'
+import renderer from 'react-test-renderer';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+import "regenerator-runtime/runtime.js";
+const regeneratorRuntime = require("regenerator-runtime");
+
+test('Create a snapshot of App', () => {
+  const component = renderer.create(
+    <App />
+  );
+  let testSnap = component.toJSON();
+  
+  expect(testSnap).toMatchSnapshot();
 });
