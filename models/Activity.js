@@ -9,6 +9,10 @@ const ActivitySchema = new Schema({
     //id
     activityNumber: {
         type: Number
+    },
+    //very high or high
+    contribution: {
+        type: String
     }
     
 });

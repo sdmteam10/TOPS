@@ -8,14 +8,14 @@ class TitleOnboarderInfo extends Component {
     render() {
         return (
           <div className="bg-primary font-monospace" style={{ height: "auto" }}>
-            <div className='text-light mx-auto text-center'>
+            <div className='mx-auto text-center'>
             <br />
-              <h2>Tell us about you.</h2>
-              <br />
-              <h6>Develop your personalised career suppport program </h6>
-              <h6>Select your skill levels in accordance</h6>
-              <h6>with your experience.</h6>
-              <br />
+                <h2 className="text-light">Tell us about you.</h2>
+                <br />
+                <h6 className="text-light">Develop your personalised career suppport program </h6>
+                <h6 className="text-light">Select your skill levels in accordance</h6>
+                <h6 className="text-light">with your experience.</h6>
+                <br />
             </div>
           </div>
         )
