@@ -8,12 +8,12 @@ class TitleOrgInfo extends Component {
     render() {
         return (
           <div className="bg-primary font-monospace" style={{ height: "auto" }}>
-            <div className='text-light mx-auto text-center'>
+            <div className='mx-auto text-center'>
               <br />
-              <h2>Organisational Information</h2>
+              <h2 className="text-light">Organisational Information</h2>
               <br />
-              <h6> Fill in the form quickly.</h6>
-              <h6> Record the interview. </h6>
+              <h6 className="text-light"> Fill in the form quickly.</h6>
+              <h6 className="text-light"> Record the interview. </h6>
               <br />
             </div>
           </div>

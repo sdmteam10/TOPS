@@ -57,6 +57,32 @@ import { fireEvent, render } from "@testing-library/react"
       
     })
 
+    it('remove duplicate object in array', function() {
+      const tree = renderer.create(<Test />)
+      expect(tree.getInstance().removeDuplicateOBJ([
+      { _id: '614a64afad8de7c962ddd661', name: 'Peer Support', activityNumber: 1, __v: 0 },
+      { _id: '614a64daad8de7c962ddd663', name: 'Team Leader Assistance', activityNumber: 2, __v: 0 },
+      { _id: '614a64eaad8de7c962ddd665', name: 'Induction', activityNumber: 3, __v: 0 },
+      { _id: '614a64f3ad8de7c962ddd667', name: 'Agile Course', activityNumber: 4, __v: 0 },
+      { _id: '614a6502ad8de7c962ddd669', name: 'Review Plan', activityNumber: 5, __v: 0 },
+      { _id: '614a64f3ad8de7c962ddd667', name: 'Agile Course', activityNumber: 4, __v: 0 },
+      { _id: '614a64daad8de7c962ddd663', name: 'Team Leader Assistance', activityNumber: 2, __v: 0 },
+      { _id: '614a6513ad8de7c962ddd66b', name: 'Checklists', activityNumber: 6, __v: 0 },
+      { _id: '614a651ead8de7c962ddd66d', name: 'Other Teams', activityNumber: 7, __v: 0 },
+      { _id: '614a6502ad8de7c962ddd669', name: 'Review Plan', activityNumber: 5, __v: 0 }])).toEqual([
+          { _id: '614a64afad8de7c962ddd661', name: 'Peer Support', activityNumber: 1, __v: 0 },
+          { _id: '614a64daad8de7c962ddd663', name: 'Team Leader Assistance', activityNumber: 2, __v: 0 },
+          { _id: '614a64eaad8de7c962ddd665', name: 'Induction', activityNumber: 3, __v: 0 },
+          { _id: '614a64f3ad8de7c962ddd667', name: 'Agile Course', activityNumber: 4, __v: 0 },
+          { _id: '614a6502ad8de7c962ddd669', name: 'Review Plan', activityNumber: 5, __v: 0 },
+          { _id: '614a6513ad8de7c962ddd66b', name: 'Checklists', activityNumber: 6, __v: 0 },
+          { _id: '614a651ead8de7c962ddd66d', name: 'Other Teams', activityNumber: 7, __v: 0 }
+        ])
+        
+
+    })
+
+
   })
 
 

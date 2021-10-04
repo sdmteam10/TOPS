@@ -87,6 +87,10 @@ class Test extends Component {
     return [...unique];
   }
 
+  removeDuplicateOBJ(arr) {
+    let unique = arr.filter( (ele, ind) => ind === arr.findIndex( elem => elem.name === ele.name))
+    return unique;
+  }
 
 
   render() {

@@ -21,12 +21,13 @@ class Alert extends Component{
     return childrenArray[0] || null;
   }
   // 关闭弹框
-  confirm = () => {
-    this.setState({
-      alertStatus:false
-    })
-    this.state.closeAlert();
-  }
+  // alert = () => {
+  //   this.setState({
+  //     alertStatus:false
+  //   })
+  //   this.state.closeAlert();
+  // }
+
   open =(options)=>{
     options = options || {};
     options.alertStatus = true;
@@ -35,12 +36,7 @@ class Alert extends Component{
       ...options
     })
   }
-  close(){
-    this.state.closeAlert();
-    this.setState({
-      ...defaultState
-    })
-  }
+
   shouldComponentUpdate(nextProps, nextState){
     return !is(fromJS(this.props), fromJS(nextProps)) || !is(fromJS(this.state), fromJS(nextState))
   }
@@ -48,15 +44,13 @@ class Alert extends Component{
   render(){
     return (
 
-      <div className="bottom-alert">
+      <div className="middle-alert">
         <div className={`alert alert-primary ${this.state.alertStatus ? 'visible' : 'invisible'}`} role="alert" >
           <div className="alert-context">
             <div className="alert-content-detail">{this.state.alertTip}</div>
-            <div className="comfirm alert-link" onClick={this.confirm}>Back</div>
           </div>
         </div>
       </div>
-
     );
   }
 }

@@ -15,7 +15,8 @@ router.get('/', (req, res) => {
 router.post('/', (req, res) => {
     const newActivity = new Activity({
       name: req.body.name,
-      activityNumber: req.body.activityNumber
+      activityNumber: req.body.activityNumber,
+      contribution: req.body.contribution
     })
   
     newActivity.save()

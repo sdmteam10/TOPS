@@ -8,13 +8,13 @@ class TitleActivity extends Component {
     render() {
         return (
           <div className="bg-primary font-monospace" style={{ height: "auto" }}>
-            <div className='text-light mx-auto text-center'>
+            <div className='mx-auto text-center'>
               <br />
-              <h2>Activity Scheduler</h2>
+              <h2 className="text-light">Activity Scheduler</h2>
               <br />
-              <h6> Drag activities onto a card to create your own scheduler.</h6>
-              <h6> Select goals to see activities.</h6>
-              <h6> Make your own activity scheduler.</h6>
+              <h6 className="text-light"> Drag activities onto a card to create your own scheduler.</h6>
+              <h6 className="text-light"> Select goals to see activities.</h6>
+              <h6 className="text-light"> Make your own activity scheduler.</h6>
               <br />
             </div>
           </div>

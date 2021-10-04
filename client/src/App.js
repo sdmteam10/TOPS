@@ -1,4 +1,5 @@
 import './App.css'
+import 'antd/dist/antd.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
@@ -21,6 +22,7 @@ import React from 'react';
 
 
 
+
 function App() {
   let pathname = window.location.pathname
   let titleDesc
@@ -38,12 +40,6 @@ function App() {
   } else if (pathname === '/OnboarderInfo') {
     titleDesc = <TitleOnboarderInfo />
   }
- 
-
-  
-
-
-  
 
   return (
     
