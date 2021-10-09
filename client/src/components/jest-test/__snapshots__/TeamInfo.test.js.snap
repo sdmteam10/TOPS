@@ -1,0 +1,782 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <TeamInfo /> component Should render 1`] = `
+<div
+  className="container-fluid col-sm-6"
+>
+  <form
+    className="mx-auto mt-md-5 font-monospace"
+    onSubmit={[Function]}
+  >
+    <div
+      className="mb-3"
+    >
+      <label
+        className="form-label"
+        htmlFor="validationTextarea"
+      >
+        1. Who is the team leader?
+      </label>
+      <input
+        className="form-control"
+        id="validationTextarea"
+        name="leader"
+        placeholder="i.e. Jim Buchan.."
+        type="text"
+      />
+    </div>
+    <div
+      className="mb-3"
+    >
+      <label
+        className="form-label"
+        htmlFor="validationTextarea"
+      >
+        2. What are the main tasks expected of the new team member?
+      </label>
+      <textarea
+        className="form-control"
+        id="validationTextarea"
+        name="maintask"
+        placeholder="Please specify.."
+      />
+    </div>
+    <div
+      className="mb-3"
+    >
+      <label
+        className="form-label"
+        htmlFor="validationTextarea"
+      >
+        3. What are the main programming languages the team uses?
+      </label>
+      <textarea
+        className="form-control"
+        id="validationTextarea"
+        name="languages"
+        placeholder="C, Java, C#, Python"
+      />
+    </div>
+    <div
+      className="mb-3"
+    >
+      <label
+        className="form-label"
+        htmlFor="validationTextarea"
+      >
+        4. What frameworks are mainly used by the team?
+      </label>
+      <textarea
+        className="form-control"
+        id="validationTextarea"
+        name="frameworks"
+        placeholder="i.e. React, VUE"
+      />
+    </div>
+    <div
+      className="mb-3"
+    >
+      <label
+        className="form-label"
+        htmlFor="validationTextarea"
+      >
+        5. What version control and code sharing mechanism is used by the team to get access to the source code?
+      </label>
+      <textarea
+        className="form-control"
+        id="validationTextarea"
+        name="codeSharing"
+        placeholder="i.e. Git"
+      />
+    </div>
+    <div
+      className="mb-3"
+    >
+      <div>
+        <label
+          className="form-label"
+          htmlFor="validationTextarea"
+        >
+          6. What documentation about the source code design and structure is available and how can it be accessed and added to? 
+        </label>
+        <textarea
+          className="form-control"
+          id="validationTextarea"
+          name="documentation"
+          placeholder="Please specify.."
+        />
+      </div>
+      <div
+        className="container-fluid"
+      >
+        <label
+          className="form-label"
+          htmlFor="validationTextarea"
+        >
+          a. What tools are used by the team for this? 
+        </label>
+        <input
+          className="form-control"
+          id="validationTextarea"
+          name="tools"
+          placeholder="Please specify.."
+        />
+      </div>
+    </div>
+    <div
+      className="mb-3"
+    >
+      <label
+        className="form-label"
+        htmlFor="validationTextarea"
+      >
+        7. What database is used by the team?
+      </label>
+      <textarea
+        className="form-control"
+        id="validationTextarea"
+        name="database"
+        placeholder="i.e. MongoDB altas.."
+      />
+    </div>
+    <div
+      className="mb-3"
+    >
+      <div
+        onChange={[Function]}
+      >
+        <label
+          className="form-label"
+          htmlFor="validationTextarea"
+        >
+          8. What are the main coding and testing techniques regularly used by the team?
+        </label>
+        <div
+          className="form-check"
+        >
+          <input
+            className="form-check-input"
+            id="flexCheckDefault"
+            type="checkbox"
+            value="Continuous Integration"
+          />
+          <label
+            className="form-check-label"
+            htmlFor="flexCheckDefault"
+          >
+            a. Continuous Integration
+          </label>
+        </div>
+        <div
+          className="form-check"
+        >
+          <input
+            className="form-check-input"
+            id="flexCheckDefault01"
+            type="checkbox"
+            value="Continuous Deployment"
+          />
+          <label
+            className="form-check-label"
+            htmlFor="flexCheckDefault01"
+          >
+            b. Continuous Deployment
+          </label>
+        </div>
+        <div
+          className="form-check"
+        >
+          <input
+            className="form-check-input"
+            id="flexCheckDefault02"
+            type="checkbox"
+            value="DevOps"
+          />
+          <label
+            className="form-check-label"
+            htmlFor="flexCheckDefault02"
+          >
+            c. DevOps
+          </label>
+        </div>
+        <div
+          className="form-check"
+        >
+          <input
+            className="form-check-input"
+            id="flexCheckDefault03"
+            type="checkbox"
+            value="Test-driven Development"
+          />
+          <label
+            className="form-check-label"
+            htmlFor="flexCheckDefault03"
+          >
+            d. Test-driven Development
+          </label>
+        </div>
+        <div
+          className="form-check"
+        >
+          <input
+            className="form-check-input"
+            id="flexCheckDefault04"
+            type="checkbox"
+            value="Behaviour Driven Development"
+          />
+          <label
+            className="form-check-label"
+            htmlFor="flexCheckDefault04"
+          >
+            e. Behaviour Driven Development
+          </label>
+        </div>
+        <div
+          className="form-check"
+        >
+          <input
+            className="form-check-input"
+            id="flexCheckDefault05"
+            type="checkbox"
+            value="Pair programming"
+          />
+          <label
+            className="form-check-label"
+            htmlFor="flexCheckDefault05"
+          >
+            f. Pair programming
+          </label>
+        </div>
+        <div
+          className="form-check"
+        >
+          <input
+            className="form-check-input"
+            id="flexCheckDefault06"
+            type="checkbox"
+            value="Mob programming"
+          />
+          <label
+            className="form-check-label"
+            htmlFor="flexCheckDefault06"
+          >
+            g. Mob programming
+          </label>
+        </div>
+        <div
+          className="form-check"
+        >
+          <input
+            className="form-check-input"
+            id="flexCheckDefault07"
+            type="checkbox"
+            value="Feature flags"
+          />
+          <label
+            className="form-check-label"
+            htmlFor="flexCheckDefault07"
+          >
+            h. Feature flags
+          </label>
+        </div>
+        <div
+          className="form-check"
+        >
+          <input
+            className="form-check-input"
+            id="flexCheckDefault08"
+            type="checkbox"
+            value="Infrastructure as code"
+          />
+          <label
+            className="form-check-label"
+            htmlFor="flexCheckDefault08"
+          >
+            i. Infrastructure as code
+          </label>
+        </div>
+        <div
+          className="form-check"
+        >
+          <input
+            className="form-check-input"
+            id="flexCheckDefault09"
+            type="checkbox"
+            value="Static code analysis"
+          />
+          <label
+            className="form-check-label"
+            htmlFor="flexCheckDefault09"
+          >
+            j. Static code analysis
+          </label>
+        </div>
+      </div>
+      <div
+        className="input-group mb-3"
+        onChange={[Function]}
+      >
+        <div
+          className="input-group-text"
+        >
+          <input
+            aria-label="Checkbox for following text input"
+            checked={false}
+            className="form-check-input mt-0"
+            disabled={true}
+            type="checkbox"
+            value="Other"
+          />
+        </div>
+        <input
+          aria-label="Text input with checkbox"
+          className="form-control"
+          onChange={[Function]}
+          placeholder="Please specify others.."
+          type="text"
+        />
+      </div>
+    </div>
+    <div>
+      <div
+        className="mb-3"
+      >
+        <label
+          className="form-label"
+          htmlFor="validationTextarea"
+        >
+          9. What tools are used by the team to support coding and testing? 
+        </label>
+        <div
+          className="container-fluid"
+        >
+          <div>
+            <label
+              className="form-label"
+              htmlFor="validationTextarea"
+            >
+              a. What IDE?
+            </label>
+            <input
+              className="form-control"
+              id="validationTextarea"
+              name="ide"
+              placeholder="i.e. Visual Studio.."
+              type="text"
+            />
+            <div>
+              <label
+                className="form-label"
+                htmlFor="validationTextarea"
+              >
+                b. What version control?
+              </label>
+              <input
+                className="form-control"
+                id="validationTextarea"
+                name="vsCtrl"
+                placeholder="i.e. GitHub.."
+                type="text"
+              />
+            </div>
+            <div>
+              <label
+                className="form-label"
+                htmlFor="validationTextarea"
+              >
+                c. What test runners?
+              </label>
+              <input
+                className="form-control"
+                id="validationTextarea"
+                name="runners"
+                placeholder="i.e. Jest, Cypress.."
+                type="text"
+              />
+            </div>
+            <div>
+              <label
+                className="form-label"
+                htmlFor="validationTextarea"
+              >
+                d. What continuous integration servers?
+              </label>
+              <input
+                className="form-control"
+                id="validationTextarea"
+                name="ciServer"
+                placeholder="i.e. CircleCI.."
+                type="text"
+              />
+            </div>
+            <div>
+              <label
+                className="form-label"
+                htmlFor="validationTextarea"
+              >
+                e. What Deployment tools
+              </label>
+              <input
+                className="form-control"
+                id="validationTextarea"
+                name="depTools"
+                placeholder="i.e. Octopus.."
+                type="text"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="mb-3"
+    >
+      <div
+        onChange={[Function]}
+      >
+        <label
+          className="form-label"
+          htmlFor="validationTextarea"
+        >
+          10. What are the main architectural styles used in the code base?
+        </label>
+        <div
+          className="form-check"
+        >
+          <input
+            className="form-check-input"
+            id="flexCheckDefault"
+            type="checkbox"
+            value="Layered"
+          />
+          <label
+            className="form-check-label"
+            htmlFor="flexCheckDefault"
+          >
+            a. Layered
+          </label>
+        </div>
+        <div
+          className="form-check"
+        >
+          <input
+            className="form-check-input"
+            id="flexCheckDefault01"
+            type="checkbox"
+            value="Event Driven"
+          />
+          <label
+            className="form-check-label"
+            htmlFor="flexCheckDefault01"
+          >
+            b. Event Driven
+          </label>
+        </div>
+        <div
+          className="form-check"
+        >
+          <input
+            className="form-check-input"
+            id="flexCheckDefault02"
+            type="checkbox"
+            value="Microservices"
+          />
+          <label
+            className="form-check-label"
+            htmlFor="flexCheckDefault02"
+          >
+            c. Microservices
+          </label>
+        </div>
+      </div>
+      <div
+        className="input-group mb-3"
+        onChange={[Function]}
+      >
+        <div
+          className="input-group-text"
+        >
+          <input
+            aria-label="Checkbox for following text input"
+            checked={false}
+            className="form-check-input mt-0"
+            disabled={true}
+            type="checkbox"
+            value="Other"
+          />
+        </div>
+        <input
+          aria-label="Text input with checkbox"
+          className="form-control"
+          onChange={[Function]}
+          placeholder="Please specify others.."
+          type="text"
+        />
+      </div>
+    </div>
+    <div
+      className="mb-3"
+    >
+      <label
+        className="form-label"
+        htmlFor="validationTextarea"
+      >
+        11. What unit testing and other testing and quality assurance standards are expected by the team?
+      </label>
+      <textarea
+        className="form-control"
+        id="validationTextarea"
+        name="testing"
+        placeholder="i.e. Code reviews.."
+      />
+    </div>
+    <div
+      className="mb-3"
+    >
+      <div
+        onChange={[Function]}
+      >
+        <label
+          className="form-label"
+          htmlFor="validationTextarea"
+        >
+          12. What Agile development process is adopted by the team?
+        </label>
+        <div
+          className="form-check"
+        >
+          <input
+            className="form-check-input"
+            id="flexCheckDefault"
+            type="checkbox"
+            value="Scrum"
+          />
+          <label
+            className="form-check-label"
+            htmlFor="flexCheckDefault"
+          >
+            a. Scrum
+          </label>
+        </div>
+        <div
+          className="form-check"
+        >
+          <input
+            className="form-check-input"
+            id="flexCheckDefault01"
+            type="checkbox"
+            value="Kanban"
+          />
+          <label
+            className="form-check-label"
+            htmlFor="flexCheckDefault01"
+          >
+            b. Kanban
+          </label>
+        </div>
+      </div>
+      <div
+        className="input-group mb-3"
+        onChange={[Function]}
+      >
+        <div
+          className="input-group-text"
+        >
+          <input
+            aria-label="Checkbox for following text input"
+            checked={false}
+            className="form-check-input mt-0"
+            disabled={true}
+            type="checkbox"
+            value="Other"
+          />
+        </div>
+        <input
+          aria-label="Text input with checkbox"
+          className="form-control"
+          onChange={[Function]}
+          placeholder="Please specify others.."
+          type="text"
+        />
+      </div>
+    </div>
+    <div
+      className="mb-3"
+    >
+      <label
+        className="form-label"
+        htmlFor="validationTextarea"
+      >
+        13. What planning techniques are used by the team?
+      </label>
+      <textarea
+        className="form-control"
+        id="validationTextarea"
+        name="planTechs"
+        placeholder="i.e. Road Map.."
+      />
+    </div>
+    <div
+      className="mb-3"
+    >
+      <label
+        className="form-label"
+        htmlFor="validationTextarea"
+      >
+        14. How is progress monitored?
+      </label>
+      <textarea
+        className="form-control"
+        id="validationTextarea"
+        name="proMoniter"
+        placeholder="i.e. Trello Board.."
+      />
+    </div>
+    <div
+      className="mb-3"
+    >
+      <label
+        className="form-label"
+        htmlFor="validationTextarea"
+      >
+        15. What tools are used by the team to support the planning and monitoring process?
+      </label>
+      <textarea
+        className="form-control"
+        id="validationTextarea"
+        name="supMonitor"
+        placeholder="i.e. Jira.."
+      />
+    </div>
+    <div
+      className="mb-3"
+    >
+      <div>
+        <label
+          className="form-label"
+          htmlFor="validationTextarea"
+        >
+          16. How do the team keep in touch and communicate? 
+        </label>
+        <textarea
+          className="form-control"
+          id="validationTextarea"
+          name="keepComu"
+          placeholder="i.e. Frequent formal and informal meetings.."
+        />
+      </div>
+      <div
+        className="container-fluid"
+      >
+        <label
+          className="form-label"
+          htmlFor="validationTextarea"
+        >
+          a. What tools are used to support team communication
+        </label>
+        <input
+          className="form-control"
+          id="validationTextarea"
+          name="teamComu"
+          placeholder="i.e. Slack, Discord, MS teams.."
+        />
+      </div>
+    </div>
+    <div
+      className="mb-3"
+    >
+      <label
+        className="form-label"
+        htmlFor="validationTextarea"
+      >
+        17. How autonomous is the team?
+      </label>
+      <textarea
+        className="form-control"
+        id="validationTextarea"
+        name="autonomous"
+        placeholder="i.e. Progress improvement up to the team"
+      />
+    </div>
+    <div
+      className="mb-3"
+    >
+      <div>
+        <label
+          className="form-label"
+          htmlFor="validationTextarea"
+        >
+          18. How much of the team work is done in a virtual environment? 
+        </label>
+        <textarea
+          className="form-control"
+          id="validationTextarea"
+          name="muchVirtual"
+          placeholder="i.e. Most of our time.."
+        />
+      </div>
+      <div
+        className="container-fluid"
+      >
+        <label
+          className="form-label"
+          htmlFor="validationTextarea"
+        >
+          a. What tools are used to keep in touch virtually?
+        </label>
+        <input
+          className="form-control"
+          id="validationTextarea"
+          name="keepVirtually"
+          placeholder="i.e. MS Teams, Zoom.."
+        />
+      </div>
+    </div>
+    <div
+      className="mb-3"
+    >
+      <div>
+        <label
+          className="form-label"
+          htmlFor="validationTextarea"
+        >
+          19. What aspects of requirements, design, coding and testing are documented? 
+        </label>
+        <textarea
+          className="form-control"
+          id="validationTextarea"
+          name="aspectsDoc"
+          placeholder="i.e. High level requirements, mock-ups, code structure, refactoring, etc."
+        />
+      </div>
+      <div
+        className="container-fluid"
+      >
+        <label
+          className="form-label"
+          htmlFor="validationTextarea"
+        >
+          a. What tools are used for this?
+        </label>
+        <input
+          className="form-control"
+          id="validationTextarea"
+          name="usedTools"
+          placeholder="i.e. Confluence.."
+        />
+      </div>
+    </div>
+    <div
+      className="mb-3"
+    >
+      <button
+        className="btn btn-primary btn-lg w-100"
+        onClick={[Function]}
+        type="submit"
+      >
+        Submit form
+      </button>
+    </div>
+  </form>
+</div>
+`;

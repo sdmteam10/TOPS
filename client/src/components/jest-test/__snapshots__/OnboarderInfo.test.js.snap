@@ -1,0 +1,988 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <OnboarderInfo /> component Should render 1`] = `
+<div
+  className="container-fluid col-lg-6"
+>
+  <div
+    className="font-monospace"
+  >
+    <br />
+    <h6
+      className="text-center"
+    >
+       Level Descriptor 
+    </h6>
+    <table
+      className="table table-bordered border-primary"
+    >
+      <thead>
+        <tr
+          className="text-center"
+        >
+          <th
+            scope="col"
+          >
+            1
+          </th>
+          <th
+            scope="col"
+          >
+            2
+          </th>
+          <th
+            scope="col"
+          >
+            3
+          </th>
+          <th
+            scope="col"
+          >
+            4
+          </th>
+          <th
+            scope="col"
+          >
+            5
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          className="text-center"
+        >
+          <td>
+            None
+          </td>
+          <td>
+            Beginner I’ve read about it and seen others use it
+          </td>
+          <td>
+            Some capability and familiarity
+          </td>
+          <td>
+            Good experience Used frequently in a previous job
+          </td>
+          <td>
+            Expert and very familiar
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <form
+    className="mx-auto mt-5 mt-md-5 font-monospace"
+    onSubmit={[Function]}
+  >
+    <div
+      className="mb-3"
+    >
+      <label
+        className="form-label"
+        htmlFor="validationTextarea"
+      >
+        1. How do you describe your level of front-end skills on JS?
+      </label>
+    </div>
+    <div>
+      <label
+        className="form-label"
+        htmlFor="customRange1"
+      >
+        (1 - 5)
+      </label>
+      <div
+        className="ant-slider"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        onMouseUp={[Function]}
+        onTouchStart={[Function]}
+      >
+        <div
+          className="ant-slider-rail"
+          style={Object {}}
+        />
+        <div
+          className="ant-slider-track"
+          style={
+            Object {
+              "left": "0%",
+              "right": "auto",
+              "width": "100%",
+            }
+          }
+        />
+        <div
+          className="ant-slider-step"
+        />
+        <div
+          aria-disabled={false}
+          aria-valuemax={5}
+          aria-valuemin={1}
+          aria-valuenow={5}
+          className="ant-slider-handle"
+          onBlur={[Function]}
+          onKeyDown={[Function]}
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          role="slider"
+          style={
+            Object {
+              "left": "100%",
+              "right": "auto",
+              "transform": "translateX(-50%)",
+            }
+          }
+          tabIndex={0}
+        />
+        <div
+          className="ant-slider-mark"
+        />
+      </div>
+    </div>
+    <div
+      className="mb-3"
+    >
+      <label
+        className="form-label"
+        htmlFor="validationTextarea"
+      >
+        2. How do you describe your level of front-end skills on Git and GitHub?
+      </label>
+    </div>
+    <div>
+      <label
+        className="form-label"
+        htmlFor="customRange2"
+      >
+        (1 - 5)
+      </label>
+      <div
+        className="ant-slider"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        onMouseUp={[Function]}
+        onTouchStart={[Function]}
+      >
+        <div
+          className="ant-slider-rail"
+          style={Object {}}
+        />
+        <div
+          className="ant-slider-track"
+          style={
+            Object {
+              "left": "0%",
+              "right": "auto",
+              "width": "100%",
+            }
+          }
+        />
+        <div
+          className="ant-slider-step"
+        />
+        <div
+          aria-disabled={false}
+          aria-valuemax={5}
+          aria-valuemin={1}
+          aria-valuenow={5}
+          className="ant-slider-handle"
+          onBlur={[Function]}
+          onKeyDown={[Function]}
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          role="slider"
+          style={
+            Object {
+              "left": "100%",
+              "right": "auto",
+              "transform": "translateX(-50%)",
+            }
+          }
+          tabIndex={0}
+        />
+        <div
+          className="ant-slider-mark"
+        />
+      </div>
+    </div>
+    <div
+      className="mb-3"
+    >
+      <label
+        className="form-label"
+        htmlFor="validationTextarea"
+      >
+        3. How do you describe your level of front-end skills on Mob Programming?
+      </label>
+    </div>
+    <div>
+      <label
+        className="form-label"
+        htmlFor="customRange3"
+      >
+        (1 - 5)
+      </label>
+      <div
+        className="ant-slider"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        onMouseUp={[Function]}
+        onTouchStart={[Function]}
+      >
+        <div
+          className="ant-slider-rail"
+          style={Object {}}
+        />
+        <div
+          className="ant-slider-track"
+          style={
+            Object {
+              "left": "0%",
+              "right": "auto",
+              "width": "100%",
+            }
+          }
+        />
+        <div
+          className="ant-slider-step"
+        />
+        <div
+          aria-disabled={false}
+          aria-valuemax={5}
+          aria-valuemin={1}
+          aria-valuenow={5}
+          className="ant-slider-handle"
+          onBlur={[Function]}
+          onKeyDown={[Function]}
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          role="slider"
+          style={
+            Object {
+              "left": "100%",
+              "right": "auto",
+              "transform": "translateX(-50%)",
+            }
+          }
+          tabIndex={0}
+        />
+        <div
+          className="ant-slider-mark"
+        />
+      </div>
+    </div>
+    <div
+      className="mb-3"
+    >
+      <label
+        className="form-label"
+        htmlFor="validationTextarea"
+      >
+        4. How do you describe your level of front-end skills on Ajax?
+      </label>
+    </div>
+    <div>
+      <label
+        className="form-label"
+        htmlFor="customRange4"
+      >
+        (1 - 5)
+      </label>
+      <div
+        className="ant-slider"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        onMouseUp={[Function]}
+        onTouchStart={[Function]}
+      >
+        <div
+          className="ant-slider-rail"
+          style={Object {}}
+        />
+        <div
+          className="ant-slider-track"
+          style={
+            Object {
+              "left": "0%",
+              "right": "auto",
+              "width": "100%",
+            }
+          }
+        />
+        <div
+          className="ant-slider-step"
+        />
+        <div
+          aria-disabled={false}
+          aria-valuemax={5}
+          aria-valuemin={1}
+          aria-valuenow={5}
+          className="ant-slider-handle"
+          onBlur={[Function]}
+          onKeyDown={[Function]}
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          role="slider"
+          style={
+            Object {
+              "left": "100%",
+              "right": "auto",
+              "transform": "translateX(-50%)",
+            }
+          }
+          tabIndex={0}
+        />
+        <div
+          className="ant-slider-mark"
+        />
+      </div>
+    </div>
+    <div
+      className="mb-3"
+    >
+      <label
+        className="form-label"
+        htmlFor="validationTextarea"
+      >
+        5. How do you describe your level of back-end skills on Express?
+      </label>
+    </div>
+    <div>
+      <label
+        className="form-label"
+        htmlFor="customRange5"
+      >
+        (1 - 5)
+      </label>
+      <div
+        className="ant-slider"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        onMouseUp={[Function]}
+        onTouchStart={[Function]}
+      >
+        <div
+          className="ant-slider-rail"
+          style={Object {}}
+        />
+        <div
+          className="ant-slider-track"
+          style={
+            Object {
+              "left": "0%",
+              "right": "auto",
+              "width": "100%",
+            }
+          }
+        />
+        <div
+          className="ant-slider-step"
+        />
+        <div
+          aria-disabled={false}
+          aria-valuemax={5}
+          aria-valuemin={1}
+          aria-valuenow={5}
+          className="ant-slider-handle"
+          onBlur={[Function]}
+          onKeyDown={[Function]}
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          role="slider"
+          style={
+            Object {
+              "left": "100%",
+              "right": "auto",
+              "transform": "translateX(-50%)",
+            }
+          }
+          tabIndex={0}
+        />
+        <div
+          className="ant-slider-mark"
+        />
+      </div>
+    </div>
+    <div
+      className="mb-3"
+    >
+      <label
+        className="form-label"
+        htmlFor="validationTextarea"
+      >
+        6. How do you describe your level of back-end skills on Node?
+      </label>
+    </div>
+    <div>
+      <label
+        className="form-label"
+        htmlFor="customRange6"
+      >
+        (1 - 5)
+      </label>
+      <div
+        className="ant-slider"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        onMouseUp={[Function]}
+        onTouchStart={[Function]}
+      >
+        <div
+          className="ant-slider-rail"
+          style={Object {}}
+        />
+        <div
+          className="ant-slider-track"
+          style={
+            Object {
+              "left": "0%",
+              "right": "auto",
+              "width": "100%",
+            }
+          }
+        />
+        <div
+          className="ant-slider-step"
+        />
+        <div
+          aria-disabled={false}
+          aria-valuemax={5}
+          aria-valuemin={1}
+          aria-valuenow={5}
+          className="ant-slider-handle"
+          onBlur={[Function]}
+          onKeyDown={[Function]}
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          role="slider"
+          style={
+            Object {
+              "left": "100%",
+              "right": "auto",
+              "transform": "translateX(-50%)",
+            }
+          }
+          tabIndex={0}
+        />
+        <div
+          className="ant-slider-mark"
+        />
+      </div>
+    </div>
+    <div
+      className="mb-3"
+    >
+      <label
+        className="form-label"
+        htmlFor="validationTextarea"
+      >
+        7. How do you describe your ability of tool skill on Visual Studio Code?
+      </label>
+    </div>
+    <div>
+      <label
+        className="form-label"
+        htmlFor="customRange7"
+      >
+        (1 - 5)
+      </label>
+      <div
+        className="ant-slider"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        onMouseUp={[Function]}
+        onTouchStart={[Function]}
+      >
+        <div
+          className="ant-slider-rail"
+          style={Object {}}
+        />
+        <div
+          className="ant-slider-track"
+          style={
+            Object {
+              "left": "0%",
+              "right": "auto",
+              "width": "100%",
+            }
+          }
+        />
+        <div
+          className="ant-slider-step"
+        />
+        <div
+          aria-disabled={false}
+          aria-valuemax={5}
+          aria-valuemin={1}
+          aria-valuenow={5}
+          className="ant-slider-handle"
+          onBlur={[Function]}
+          onKeyDown={[Function]}
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          role="slider"
+          style={
+            Object {
+              "left": "100%",
+              "right": "auto",
+              "transform": "translateX(-50%)",
+            }
+          }
+          tabIndex={0}
+        />
+        <div
+          className="ant-slider-mark"
+        />
+      </div>
+    </div>
+    <div
+      className="mb-3"
+    >
+      <label
+        className="form-label"
+        htmlFor="validationTextarea"
+      >
+        8. How do you describe your ability of tool skill on Postman?
+      </label>
+    </div>
+    <div>
+      <label
+        className="form-label"
+        htmlFor="customRange8"
+      >
+        (1 - 5)
+      </label>
+      <div
+        className="ant-slider"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        onMouseUp={[Function]}
+        onTouchStart={[Function]}
+      >
+        <div
+          className="ant-slider-rail"
+          style={Object {}}
+        />
+        <div
+          className="ant-slider-track"
+          style={
+            Object {
+              "left": "0%",
+              "right": "auto",
+              "width": "100%",
+            }
+          }
+        />
+        <div
+          className="ant-slider-step"
+        />
+        <div
+          aria-disabled={false}
+          aria-valuemax={5}
+          aria-valuemin={1}
+          aria-valuenow={5}
+          className="ant-slider-handle"
+          onBlur={[Function]}
+          onKeyDown={[Function]}
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          role="slider"
+          style={
+            Object {
+              "left": "100%",
+              "right": "auto",
+              "transform": "translateX(-50%)",
+            }
+          }
+          tabIndex={0}
+        />
+        <div
+          className="ant-slider-mark"
+        />
+      </div>
+    </div>
+    <div
+      className="mb-3"
+    >
+      <label
+        className="form-label"
+        htmlFor="validationTextarea"
+      >
+        9. How do you describe your ability of planning and quality assurance standards on #?
+      </label>
+    </div>
+    <div>
+      <label
+        className="form-label"
+        htmlFor="customRange9"
+      >
+        (1 - 5)
+      </label>
+      <div
+        className="ant-slider"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        onMouseUp={[Function]}
+        onTouchStart={[Function]}
+      >
+        <div
+          className="ant-slider-rail"
+          style={Object {}}
+        />
+        <div
+          className="ant-slider-track"
+          style={
+            Object {
+              "left": "0%",
+              "right": "auto",
+              "width": "100%",
+            }
+          }
+        />
+        <div
+          className="ant-slider-step"
+        />
+        <div
+          aria-disabled={false}
+          aria-valuemax={5}
+          aria-valuemin={1}
+          aria-valuenow={5}
+          className="ant-slider-handle"
+          onBlur={[Function]}
+          onKeyDown={[Function]}
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          role="slider"
+          style={
+            Object {
+              "left": "100%",
+              "right": "auto",
+              "transform": "translateX(-50%)",
+            }
+          }
+          tabIndex={0}
+        />
+        <div
+          className="ant-slider-mark"
+        />
+      </div>
+    </div>
+    <div
+      className="mb-3"
+    >
+      <label
+        className="form-label"
+        htmlFor="validationTextarea"
+      >
+        10. How do you describe your level of database skills on MongoDB?
+      </label>
+    </div>
+    <div>
+      <label
+        className="form-label"
+        htmlFor="customRange10"
+      >
+        (1 - 5)
+      </label>
+      <div
+        className="ant-slider"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        onMouseUp={[Function]}
+        onTouchStart={[Function]}
+      >
+        <div
+          className="ant-slider-rail"
+          style={Object {}}
+        />
+        <div
+          className="ant-slider-track"
+          style={
+            Object {
+              "left": "0%",
+              "right": "auto",
+              "width": "100%",
+            }
+          }
+        />
+        <div
+          className="ant-slider-step"
+        />
+        <div
+          aria-disabled={false}
+          aria-valuemax={5}
+          aria-valuemin={1}
+          aria-valuenow={5}
+          className="ant-slider-handle"
+          onBlur={[Function]}
+          onKeyDown={[Function]}
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          role="slider"
+          style={
+            Object {
+              "left": "100%",
+              "right": "auto",
+              "transform": "translateX(-50%)",
+            }
+          }
+          tabIndex={0}
+        />
+        <div
+          className="ant-slider-mark"
+        />
+      </div>
+    </div>
+    <div
+      className="mb-3"
+    >
+      <label
+        className="form-label"
+        htmlFor="validationTextarea"
+      >
+        11. How do you describe your coding and testing technique on Jest and unit testing?
+      </label>
+    </div>
+    <div>
+      <label
+        className="form-label"
+        htmlFor="customRange11"
+      >
+        (1 - 5)
+      </label>
+      <div
+        className="ant-slider"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        onMouseUp={[Function]}
+        onTouchStart={[Function]}
+      >
+        <div
+          className="ant-slider-rail"
+          style={Object {}}
+        />
+        <div
+          className="ant-slider-track"
+          style={
+            Object {
+              "left": "0%",
+              "right": "auto",
+              "width": "100%",
+            }
+          }
+        />
+        <div
+          className="ant-slider-step"
+        />
+        <div
+          aria-disabled={false}
+          aria-valuemax={5}
+          aria-valuemin={1}
+          aria-valuenow={5}
+          className="ant-slider-handle"
+          onBlur={[Function]}
+          onKeyDown={[Function]}
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          role="slider"
+          style={
+            Object {
+              "left": "100%",
+              "right": "auto",
+              "transform": "translateX(-50%)",
+            }
+          }
+          tabIndex={0}
+        />
+        <div
+          className="ant-slider-mark"
+        />
+      </div>
+    </div>
+    <div
+      className="mb-3"
+    >
+      <label
+        className="form-label"
+        htmlFor="validationTextarea"
+      >
+        12. How do you describe your ability of team communication？
+      </label>
+    </div>
+    <div>
+      <label
+        className="form-label"
+        htmlFor="customRange12"
+      >
+        (1 - 5)
+      </label>
+      <div
+        className="ant-slider"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        onMouseUp={[Function]}
+        onTouchStart={[Function]}
+      >
+        <div
+          className="ant-slider-rail"
+          style={Object {}}
+        />
+        <div
+          className="ant-slider-track"
+          style={
+            Object {
+              "left": "0%",
+              "right": "auto",
+              "width": "100%",
+            }
+          }
+        />
+        <div
+          className="ant-slider-step"
+        />
+        <div
+          aria-disabled={false}
+          aria-valuemax={5}
+          aria-valuemin={1}
+          aria-valuenow={5}
+          className="ant-slider-handle"
+          onBlur={[Function]}
+          onKeyDown={[Function]}
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          role="slider"
+          style={
+            Object {
+              "left": "100%",
+              "right": "auto",
+              "transform": "translateX(-50%)",
+            }
+          }
+          tabIndex={0}
+        />
+        <div
+          className="ant-slider-mark"
+        />
+      </div>
+    </div>
+    <div
+      className="mb-3"
+    >
+      <label
+        className="form-label"
+        htmlFor="validationTextarea"
+      >
+        13. How do you describe your ability of the product/service offered by the organisation？
+      </label>
+    </div>
+    <div>
+      <label
+        className="form-label"
+        htmlFor="customRange13"
+      >
+        (1 - 5)
+      </label>
+      <div
+        className="ant-slider"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        onMouseUp={[Function]}
+        onTouchStart={[Function]}
+      >
+        <div
+          className="ant-slider-rail"
+          style={Object {}}
+        />
+        <div
+          className="ant-slider-track"
+          style={
+            Object {
+              "left": "0%",
+              "right": "auto",
+              "width": "100%",
+            }
+          }
+        />
+        <div
+          className="ant-slider-step"
+        />
+        <div
+          aria-disabled={false}
+          aria-valuemax={5}
+          aria-valuemin={1}
+          aria-valuenow={5}
+          className="ant-slider-handle"
+          onBlur={[Function]}
+          onKeyDown={[Function]}
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          role="slider"
+          style={
+            Object {
+              "left": "100%",
+              "right": "auto",
+              "transform": "translateX(-50%)",
+            }
+          }
+          tabIndex={0}
+        />
+        <div
+          className="ant-slider-mark"
+        />
+      </div>
+    </div>
+    <div
+      className="mb-3"
+    >
+      <button
+        className="btn btn-primary btn-lg w-100"
+        onClick={[Function]}
+        type="submit"
+      >
+        Submit form
+      </button>
+    </div>
+    <br />
+  </form>
+</div>
+`;

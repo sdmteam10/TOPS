@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <TitleOnboarderInfo /> component Should render 1`] = `
+<div
+  className="bg-primary font-monospace"
+  style={
+    Object {
+      "height": "auto",
+    }
+  }
+>
+  <div
+    className="mx-auto text-center"
+  >
+    <br />
+    <h2
+      className="text-light"
+    >
+      Tell us about you.
+    </h2>
+    <br />
+    <h6
+      className="text-light"
+    >
+      Develop your personalised career suppport program 
+    </h6>
+    <h6
+      className="text-light"
+    >
+      Select your skill levels in accordance
+    </h6>
+    <h6
+      className="text-light"
+    >
+      with your experience.
+    </h6>
+    <br />
+  </div>
+</div>
+`;

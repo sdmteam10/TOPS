@@ -56,16 +56,12 @@ class Alert extends Component{
 }
  
 let div = document.createElement('div');
-let props = {
-   
-};
+let props = {};
 document.body.appendChild(div);
  
-let Box = ReactDOM.render(React.createElement(
+let Box = ReactDOM.hydrate(React.createElement(
   Alert,
   props
 ),div);
- 
- 
  
 export default Box;

@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import Draggable from 'react-draggable';
-import CTE from "react-click-to-edit"
-
+import { Switch } from 'antd';
+import ActivityCard from './ActivityCard';
 
 
 class GoalsActitivitiesList extends Component {
@@ -17,10 +16,11 @@ class GoalsActitivitiesList extends Component {
         recoActIdList: [],   //storge activities number list
         checkboxStatus: {}, //localstorage reload goals checkboxes status
         goalActsItems: [],
-        count: 0
+        count: 0,
+        loading: true,
+        currentAct: "",
+        selectActs: sessionStorage.getItem(["selectActsItems"]) ? sessionStorage.getItem(["selectActsItems"]).split(',') : []
     }
-
-
 
     componentDidMount() {
         const checkboxStatus = { ...localStorage };
@@ -28,6 +28,9 @@ class GoalsActitivitiesList extends Component {
 
         const goalActsItems = { ...sessionStorage };
         this.setState({ goalActsItems, })
+        // console.log("here",goalActsItems)
+        // console.log("here2",sessionStorage.getItem(["selectActsItems"]))
+        // console.log("here3",goalActsItems["selectActsItems"])
 
 
         axios.get(`/routes/api/goals/`)
@@ -142,7 +145,6 @@ class GoalsActitivitiesList extends Component {
 
         }
 
-
         //remove duplicates in goalsActs, save to goalActs and save to sessionStorage after each click
         await this.setState({
             goalActs: this.removeDuplicateOBJ(this.state.goalsActs)
@@ -159,13 +161,41 @@ class GoalsActitivitiesList extends Component {
 
         const checkboxStatus = { ...localStorage };
         this.setState({ checkboxStatus, }) //click to update session storage
+        
+        //load saved activities after click activity
+        const goalActsItems = { ...sessionStorage };
+        this.setState({ goalActsItems, })
+        
+        //get activity name
+        if (e.target.checked){
+            this.setState({currentAct: e.target.value})
+            this.state.selectActs.push(e.target.value)
+            
+            console.log(this.state.selectActs)
+        } else {
+            this.setState({currentAct: ""})
+            let index = this.state.selectActs.findIndex(i => i === e.target.value)
+            this.state.selectActs.splice(index, 1)
+            console.log(this.state.selectActs)
+        }
+        localStorage.setItem(e.target.value, e.target.checked)
+        sessionStorage.setItem("selectActsItems", this.state.selectActs)
+        
+        
+        
+        //console.log(e.target.value)
     }
 
     async emptyBind(event) {
     }
 
+    onSwitch = checked => {
+        this.setState({ loading: !checked })
+      };
+
 
     render() {
+        const { loading } = this.state;
 
         return (
             <>
@@ -213,51 +243,35 @@ class GoalsActitivitiesList extends Component {
                                             } else if (goalAct.contribution === "High") {
                                                 return <div className="d-grid gap-0 btn-group" role="group" aria-label="Basic checkbox toggle button group" key={goalAct._id}>
                                                     <input type="checkbox" className="btn-check" id={goalAct._id} value={goalAct.name} onChange={event => this.getActChecked(event)} checked={this.state.checkboxStatus[goalAct._id] === "true" ? true : false} />
-                                                        <label className="btn btn-outline-secondary btn-sm" htmlFor={goalAct._id}>{goalAct.name}</label>
+                                                        <label className="btn btn-outline-secondary btn-sm" htmlFor={goalAct._id}>{goalAct.name}</label>                                                                                                                                                                                                                                                                                                 
                                                     <div style={{ height: '10px' }}></div>
                                                 </div>
                                             }
+                                            return<div></div>
                                         })
                                     }
                                 </div>
                             </div>
+                            
+                                <div className="col text-dark" content="width=decive-width, initial-scale=1">
 
-
-
-
-
-
-
-                            <div className="col text-dark" style={{ width: "500px", height: '600px' }}>
-                                <Draggable>
-                                    <div className="card text-dark bg-light mb-3" style={{ "maxwidth": "18rem" }}>
-                                        <div className="card-header">Header</div>
-                                        <div className="card-body">
-                                            {/* This text may be changed to a value like actChecked, loading from state */}
-                                            <h5 className="card-title">Light card title</h5>
-                                            <CTE className="card-text" initialValue="Click to write description"></CTE>
-                                        </div>
-                                    </div>
-                                </Draggable>
-                                <Draggable>
-                                    <div className="card text-dark bg-info mb-3" style={{ "maxwidth": "18rem" }}>
-                                        <div className="card-header">Header</div>
-                                        <div className="card-body">
-                                            <h5 className="card-title">Info card title</h5>
-                                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        </div>
-                                    </div>
-                                </Draggable>
-                            </div>
-
-
+                                    <label className="mx-2 md-3 h5">All Cards:</label>
+                                    <Switch checked={!loading} onChange={this.onSwitch} />  
+                                    {/* <h1 style={{position: 'relative', top:"20%",right:'16%'}}>Iteration One</h1>  
+                                    <h1 style={{position: 'relative', bottom:"20%",right:'16%'}}>Iteration Two</h1> */}
+                                        
+                                    <hr style={{height: '30%', width: '46%', position: 'absolute', right:'3%', color: '#1890ff'}}/>
+                                    <hr style={{height: '60%', width: '46%', position: 'absolute', right:'3%', color: '#13c2c2'}}/>
+                                    <hr style={{height: '90%', width: '46%', position: 'absolute', right:'3%', color: '#85a5ff'}}/>
+                                    
+                                    {this.state.selectActs.map(act => <ActivityCard key={act} loadingValue={loading} actName={act} pos={{x:0,y:0}}/>)} 
+                                                                 
+                                </div>
+                                
                         </div>
                     </div>
-
                 </div>
             </>
-
-
         )
     }
 }

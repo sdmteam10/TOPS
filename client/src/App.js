@@ -6,7 +6,6 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Home from './components/Home'
 import Onboarder from './components/Onboarder'
 import Designer from './components/Designer'
-import GoalsList from './components/GoalsList'
 import GoalsActivitiesList from './components/GoalsActivitiesList'
 import AppNavBar from './components/AppNavBar'
 import TitleActivity from './components/TitleActivity'
@@ -55,18 +54,12 @@ function App() {
             <Route path="/Home" component={Home} />
             <Route path="/Onboarder" component={Onboarder} />
             <Route path="/Designer" component={Designer} />
-            <Route path="/Goals" component={GoalsList} />
             <Route path="/GoalsActivitiesList" component={GoalsActivitiesList} />
             <Route path="/OrgInfo" component={OrgInfo} />
             <Route path="/TeamInfo" component={TeamInfo} />
             <Route path="/Test" component={Test} />
             <Route path="/OnboarderInfo" component={OnboarderInfo} />
-            {/* <Route path="/Designer" render={() =>
-              <Designer>
-                <Route exat path="/Designer" component={Designer} />
-                <Route path="Goals" component={GoalsList} />
-                {/* <Route path="/Designer/OrgInfo" component={GoalsList} /> */}
-              {/* </Designer>} */}
+            
           </Switch>
         </Router>
       </div>
