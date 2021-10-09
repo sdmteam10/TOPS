@@ -207,6 +207,8 @@ class OnboarderInfo extends Component {
             <div className="mb-3">
               <button className="btn btn-primary btn-lg w-100" type="submit" onClick={this.successInfo}>Submit form</button>
             </div>
+            <br>
+            </br>
           </form>
         </div>
       </>

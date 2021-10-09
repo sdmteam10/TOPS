@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <Home /> component Should render 1`] = `
+<div
+  className="mt-md-5 ws-0 mx-md-auto"
+>
+  <div
+    className="font-monospace"
+  >
+    Home Page
+  </div>
+</div>
+`;

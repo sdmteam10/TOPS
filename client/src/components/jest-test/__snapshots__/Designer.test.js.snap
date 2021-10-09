@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <Designer /> component Should render 1`] = `
+<div>
+  <div
+    className="mt-md-5 ws-0 mx-md-auto"
+  >
+    <div>
+      <h1
+        className="text-secondary fw-light font-monospace"
+      >
+        Welcome Designer!
+      </h1>
+      <br />
+      <br />
+    </div>
+    <div>
+      <a
+        className="link-secondary fw-light font-monospace"
+        href="OrgInfo"
+      >
+        Organisation Information Form
+      </a>
+    </div>
+    <div>
+      <a
+        className="link-secondary fw-light font-monospace"
+        href="TeamInfo"
+      >
+        Team Information Form
+      </a>
+    </div>
+    <div>
+      <a
+        className="link-secondary fw-light font-monospace"
+        href="GoalsActivitiesList"
+      >
+        Activity Scheduler
+      </a>
+    </div>
+  </div>
+</div>
+`;

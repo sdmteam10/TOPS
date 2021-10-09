@@ -19,10 +19,7 @@ class Designer extends Component {
             <a className="link-secondary fw-light font-monospace" href="TeamInfo">Team Information Form</a>
           </div>
           <div>
-            <a className="link-secondary fw-light font-monospace" href="GoalsActivitiesList">Goals-Activities Page</a>
-          </div>
-          <div>
-            <a className="link-secondary fw-light font-monospace" href="Goals">Goals Page</a>
+            <a className="link-secondary fw-light font-monospace" href="GoalsActivitiesList">Activity Scheduler</a>
           </div>
         </div>
       </div>

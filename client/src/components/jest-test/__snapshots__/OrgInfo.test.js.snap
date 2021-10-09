@@ -1,0 +1,287 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <OrgInfo /> component Should render 1`] = `
+<div
+  className="container-fluid col-lg-6"
+>
+  <form
+    className="mx-auto mt-5 mt-md-5 font-monospace"
+    id="2"
+    onSubmit={[Function]}
+  >
+    <div
+      className="mb-3"
+    >
+      <label
+        className="form-label"
+        htmlFor="validationTextarea"
+      >
+        1. Who is the Manager that the team manager reports to?
+      </label>
+      <input
+        className="form-control"
+        id="validationTextarea"
+        name="whoIsManager"
+        placeholder="i.e. Jim Buchan.."
+        required={true}
+        type="text"
+      />
+    </div>
+    <div
+      className="mb-3"
+    >
+      <label
+        className="form-label"
+        htmlFor="validationTextarea"
+      >
+        2. Where is an organisational chart available?
+      </label>
+      <textarea
+        className="form-control"
+        id="validationTextarea"
+        name="whereIsChart"
+        placeholder="https://.."
+        required={true}
+      />
+    </div>
+    <div
+      className="mb-3"
+    >
+      <label
+        className="form-label"
+        htmlFor="validationTextarea"
+      >
+        3. Is there an Induction program for new employees? If so how/when can this be accessed?
+      </label>
+      <div
+        onChange={[Function]}
+      >
+        <div
+          className="form-check"
+        >
+          <input
+            className="form-check-input"
+            id="validationFormCheck2"
+            name="isInduProgram"
+            required={true}
+            type="radio"
+            value={true}
+          />
+          <label
+            className="form-check-label"
+            htmlFor="validationFormCheck2"
+          >
+            Yes
+          </label>
+           
+        </div>
+        <div
+          className="form-check mb-3"
+        >
+          <input
+            className="form-check-input"
+            id="validationFormCheck2"
+            name="isInduProgram"
+            required={true}
+            type="radio"
+            value={false}
+          />
+          <label
+            className="form-check-label"
+            htmlFor="validationFormChec3"
+          >
+            No
+          </label>
+          <div
+            className="invalid-feedback"
+          >
+            More example invalid feedback text
+          </div>
+        </div>
+      </div>
+      <textarea
+        className="form-control"
+        disabled={true}
+        id="validationTextarea"
+        placeholder="https://.."
+      />
+    </div>
+    <div
+      className="mb-3"
+    >
+      <label
+        className="form-label"
+        htmlFor="validationTextarea"
+      >
+        4. What funds are available for the onboarder to attend formal courses?
+      </label>
+      <textarea
+        className="form-control"
+        id="validationTextarea"
+        name="funds"
+        placeholder="i.e. SDM Voucher"
+      />
+    </div>
+    <div
+      className="mb-3"
+    >
+      <div
+        onChange={[Function]}
+      >
+        <label
+          className="form-label"
+          htmlFor="validationTextarea"
+        >
+          5. Is there a qualified suitable mentor available for the new employee?
+        </label>
+        <div
+          className="form-check"
+        >
+          <input
+            className="form-check-input"
+            id="validationFormCheck3"
+            name="isMentor"
+            type="radio"
+            value="true"
+          />
+          <label
+            className="form-check-label"
+            htmlFor="validationFormCheck4"
+          >
+            Yes
+          </label>
+        </div>
+        <div
+          className="form-check mb-3"
+        >
+          <input
+            className="form-check-input"
+            id="validationFormCheck3"
+            name="isMentor"
+            type="radio"
+            value="false"
+          />
+          <label
+            className="form-check-label"
+            htmlFor="validationFormCheck5"
+          >
+            No
+          </label>
+        </div>
+      </div>
+    </div>
+    <div
+      className="mb-3"
+    >
+      <label
+        className="form-label"
+        htmlFor="validationTextarea"
+      >
+        6. How can the organisational vision best be understood? 
+      </label>
+      <textarea
+        className="form-control"
+        id="validationTextarea"
+        name="vision"
+        placeholder="i.e. Better team work to best product.."
+      />
+    </div>
+    <div
+      className="mb-3"
+    >
+      <label
+        className="form-label"
+        htmlFor="validationTextarea"
+      >
+        7. How can the product/service offered by the organisation best be understood by a new employee (video, marketing material, market segments etc)
+      </label>
+      <textarea
+        className="form-control"
+        id="validationTextarea"
+        name="product"
+        placeholder="i.e. Check the youtube channel.."
+      />
+    </div>
+    <div
+      className="mb-3"
+    >
+      <label
+        className="form-label"
+        htmlFor="validationTextarea"
+      >
+        8.   What tools are used for company wide communications?
+      </label>
+      <textarea
+        className="form-control"
+        id="validationTextarea"
+        name="tool"
+        placeholder="i.e. Ms teams, Zoom, Whatsapp.."
+      />
+    </div>
+    <div
+      className="mb-3"
+    >
+      <label
+        className="form-label"
+        htmlFor="validationTextarea"
+      >
+        9.  Is there a company wide knowledge base? 
+      </label>
+      <div
+        onChange={[Function]}
+      >
+        <div
+          className="form-check"
+        >
+          <input
+            className="form-check-input"
+            id="validationFormCheck2"
+            name="isKnoBase"
+            type="radio"
+            value="true"
+          />
+          <label
+            className="form-check-label"
+            htmlFor="validationFormCheck2"
+          >
+            Yes
+          </label>
+        </div>
+        <div
+          className="form-check mb-3"
+        >
+          <input
+            className="form-check-input"
+            id="validationFormCheck3"
+            name="isKnoBase"
+            type="radio"
+            value="false"
+          />
+          <label
+            className="form-check-label"
+            htmlFor="validationFormCheck3"
+          >
+            No
+          </label>
+          <div
+            className="invalid-feedback"
+          >
+            More example invalid feedback text
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="mb-3"
+    >
+      <button
+        className="btn btn-primary btn-lg w-100"
+        onClick={[Function]}
+        type="submit"
+      >
+        Submit form
+      </button>
+    </div>
+  </form>
+</div>
+`;

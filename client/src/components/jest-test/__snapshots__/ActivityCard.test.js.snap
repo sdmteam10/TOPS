@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <ActivityCard /> component Should render 1`] = `
+<div
+  className="ant-card ant-card-bordered ant-card-hoverable text-center react-draggable"
+  onMouseDown={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  style={
+    Object {
+      "marginTop": 16,
+      "transform": "translate(0px,0px)",
+      "width": 200,
+    }
+  }
+  transform={null}
+>
+  <div
+    className="ant-card-body"
+    style={
+      Object {
+        "backgroundColor": "#DFFFDF",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Test <GoalsActivitiesList /> component Should render 1`] = `
+<div
+  className="ant-card ant-card-bordered ant-card-hoverable text-center react-draggable"
+  onMouseDown={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  style={
+    Object {
+      "marginTop": 16,
+      "transform": "translate(0px,0px)",
+      "width": 200,
+    }
+  }
+  transform={null}
+>
+  <div
+    className="ant-card-body"
+    style={
+      Object {
+        "backgroundColor": "#DFFFDF",
+      }
+    }
+  />
+</div>
+`;
