@@ -77,11 +77,9 @@ class OrgInfo extends Component {
  
   successInfo =  () =>{
     Alert.open({
-      alertTip:"Successful submitted. You may make changes and submit again.",
-      closeAlert:function(){
-          console.log("Alert is closed...");
-      }
+      alertTip:"Saved successfully, skipping automatically!",
   });
+    window.location.href="/GoalsActivitiesList"
   }
   
 
@@ -173,6 +171,8 @@ class OrgInfo extends Component {
               <button className="btn btn-primary btn-lg w-100" type="submit" onClick={this.successInfo}>Submit form</button>
   
             </div>
+            <br>
+            </br>
           </form>
         </div>
       </>

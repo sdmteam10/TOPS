@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Draggable from 'react-draggable';
 import { Card } from 'antd';
 
@@ -15,7 +15,7 @@ import { Card } from 'antd';
   
 
 const ActivityCard = ({loadingValue, actName, pos}) => {
-const[deltaPosition, setDeltaPosition] = useState(0)
+// const[deltaPosition, setDeltaPosition] = useState(0)
 // const handleDrag = (e, ui) => {
 //     const {x, y} = this.state.deltaPosition;
 //     setDeltaPosition({
