@@ -11,5 +11,5 @@ jobs:
     - name: Install dependencies and run tests
       working-directory: ./client
       run: |
-        npm install jest
+        npm install
         npm run test
