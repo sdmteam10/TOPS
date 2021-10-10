@@ -54,12 +54,12 @@ class Alert extends Component{
     );
   }
 }
- 
+
 let div = document.createElement('div');
 let props = {};
 document.body.appendChild(div);
  
-let Box = ReactDOM.hydrate(React.createElement(
+let Box = ReactDOM.render(React.createElement(
   Alert,
   props
 ),div);
