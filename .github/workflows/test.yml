@@ -10,4 +10,6 @@ jobs:
         node-version: '14'
     - name: Install dependencies and run tests
       working-directory: ./client
-      run: npm test
+      run: |
+        npm install jest
+        npm test
