@@ -12,4 +12,4 @@ jobs:
       working-directory: ./client
       run: |
         npm install jest
-        npm test
+        npm run test
